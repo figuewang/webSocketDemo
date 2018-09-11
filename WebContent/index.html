@@ -15,7 +15,7 @@
  
 <script>
     var ws = null ;
-    var target="ws://localhost:8080/webSocketDemo/websocket/test";
+    var target="ws://"+window.location.host+"/webSocketDemo/websocket/test";
     if ('WebSocket' in window) {
         ws = new WebSocket(target);
     } else if ('MozWebSocket' in window) {
